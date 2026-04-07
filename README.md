@@ -9,7 +9,7 @@
 
 ## 部署说明
 
-本项目通过 Docker 自动从 GitHub Releases 下载最新的 JAR 文件进行部署。
+本项目通过 Docker 自动从 GitHub Releases 下载最新的 JAR 文件进行在Render平台上部署。
 
 ### 更新应用版本
 
