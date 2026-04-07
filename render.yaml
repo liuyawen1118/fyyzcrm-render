@@ -12,3 +12,5 @@ services:
         value: prod
       - key: TZ
         value: Asia/Shanghai
+      - key: JAVA_OPTS
+        value: -Xms256m -Xmx400m -XX:+UseG1GC
