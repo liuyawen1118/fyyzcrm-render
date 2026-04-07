@@ -16,7 +16,7 @@
 1. 在 GitHub Releases 中创建新版本（如 v1.0.1）
 2. 上传新的 JAR 文件
 3. 更新 Dockerfile 中的版本号
-4. 推送代码到 GitHub
+4. 推送代码到 GitHub （1.git add .; 2.git commit -m "Deploy Java app to Render"; 3.git push -u origin main --force）
 5. Render 会自动重新部署
 
 ### 环境变量
