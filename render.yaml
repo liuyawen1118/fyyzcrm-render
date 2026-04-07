@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: fyyzcrm
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    region: oregon
+    healthCheckPath: /
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: TZ
+        value: Asia/Shanghai
