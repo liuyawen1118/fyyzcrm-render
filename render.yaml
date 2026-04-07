@@ -13,4 +13,4 @@ services:
       - key: TZ
         value: Asia/Shanghai
       - key: JAVA_OPTS
-        value: -Xms256m -Xmx400m -XX:+UseG1GC -Djdk.tls.client.protocols=TLSv1.2,TLSv1.3 -Dhttps.protocols=TLSv1.2,TLSv1.3 -Djavax.net.ssl.trustStoreType=JKS
+        value: -Xms256m -Xmx400m -XX:+UseG1GC -Dfile.encoding=UTF-8
