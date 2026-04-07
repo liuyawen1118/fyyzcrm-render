@@ -11,7 +11,7 @@ ENV TZ=Asia/Shanghai
 WORKDIR /app
 
 # 或者使用固定的 URL（推荐，更稳定）
-RUN wget --no-check-certificate https://github.com/liuyawen1118/fyyzcrm-render/releases/download/v1.0.0/fyyzcrm.jar -O /app/fyyzcrm.jar
+RUN wget --no-check-certificate https://github.com/liuyawen1118/fyyzcrm-render/releases/download/v1.0.1/fyyzcrm.jar -O /app/fyyzcrm.jar
 
 # 验证文件下载成功
 RUN ls -lh /app/fyyzcrm.jar
