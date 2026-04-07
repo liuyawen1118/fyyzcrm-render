@@ -20,7 +20,7 @@ RUN ls -lh /app/fyyzcrm.jar
 EXPOSE 9999
 
 # 设置 JVM 参数（优化内存使用，Render 免费套餐 512MB）
-ENV JAVA_OPTS="-Xms256m -Xmx400m -XX:+UseG1GC -XX:MaxPermSize=128m -Dfile.encoding=UTF-8"
+ENV JAVA_OPTS="-Xms256m -Xmx400m -XX:+UseG1GC -XX:MaxPermSize=128m -Dfile.encoding=UTF-8 -Djdk.tls.client.protocols=TLSv1.2,TLSv1.3 -Dhttps.protocols=TLSv1.2,TLSv1.3 -Djavax.net.ssl.trustStoreType=JKS"
 
 # 健康检查（可选，SpringBoot Actuator）
 HEALTHCHECK --interval=30s --timeout=3s --start-period=60s --retries=3 \
